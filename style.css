@@ -1,0 +1,110 @@
+body {
+	background-color: black;
+}
+#title {
+	font-size: 3rem;
+	text-align: center;
+	color: white;
+	width: fit-content;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	transition: 0.4s;
+	background-size: 400% 100%;
+	cursor: default;
+}
+#title:hover {
+	background-image: linear-gradient(
+		to left,
+		rgb(167, 180, 124),
+		rgb(79, 195, 247),
+		rgb(112, 217, 196),
+		rgb(144, 238, 144),
+		rgb(200, 202, 72),
+		rgb(255, 165, 0),
+		rgb(167, 180, 124)
+	);
+	background-repeat: repeat;
+	animation: rainbow_animation 50s linear infinite;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+@keyframes rainbow_animation {
+	to {
+		background-position: 4500vh;
+	}
+}
+.btn {
+	border: 1.5px solid black;
+	text-align: center;
+	padding: 2rem;
+	background: white;
+	font-size: 2rem;
+	border-radius: 10px;
+	transition: 0.5s;
+	color: black;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	outline: none;
+}
+#pierre {
+	left: 30%;
+	background-color: #4fc3f7;
+}
+#pierre:hover {
+	background-color: blue;
+	color: white;
+}
+#feuille {
+	left: 50%;
+	background-color: lightgreen;
+}
+#feuille:hover {
+	background-color: green;
+	color: white;
+}
+#ciseaux {
+	left: 70%;
+	background-color: orange;
+}
+#ciseaux:hover {
+	background-color: red;
+	color: white;
+}
+#result {
+	color: white;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: xx-large;
+	background-image: linear-gradient(to right, #4fc3f7, lightgreen, orange);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+#emoji {
+	color: white;
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 3cm;
+	transition: 1s;
+}
+#ordi {
+	color: white;
+	position: absolute;
+	top: 90%;
+	font-size: larger;
+}
+#joueur {
+	color: white;
+	position: absolute;
+	top: 90%;
+	left: 90%;
+	font-size: larger;
+}
